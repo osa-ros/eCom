@@ -1,5 +1,16 @@
+import { Container } from "react-bootstrap";
+import styles from "./styles.module.css";
+import Header from "../../components/common/Header/Header";
+
+const { container, wrapper } = styles;
 function MainLayout() {
-  return <div>MainLayout</div>;
+  return (
+    <Container className={container}>
+      <div className={wrapper}>
+        <Header />
+      </div>
+    </Container>
+  );
 }
 
 export default MainLayout;
